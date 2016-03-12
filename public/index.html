@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='eightBall'>
+  <head>
+
+    <title>Magic 8 Ball</title>
+    <link rel="icon" type="image/jpg" href="http://simpleicon.com/wp-content/uploads/eight-ball.png"/>
+  </head>
+  <body ng-controller='mainCtrl'>
+    <h1>My Magic 8 Ball</h1>
+      {{test}}
+    <form ng-submit='submitQuestion()'>
+      <input type="text" ng-model='question'>
+      <input value='Ask!' type='submit'>
+      <div>
+        {{fortune}}
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/main-control.js"></script>
+    <script src="services/eight-ball-service.js"></script>
+
+    </script>
+  </body>
+</html>
